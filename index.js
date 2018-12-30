@@ -68,7 +68,7 @@ module.exports = (input, options, pad) => {
 		}
 
 		if (input instanceof Date) {
-			return `${input.toISOString()}`;
+			return `"${input.toISOString()}"`;
 		}
 
 		if (Array.isArray(input)) {
